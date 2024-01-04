@@ -1,0 +1,70 @@
+/* Imagen fondo */
+body {
+    background-image: url(
+        https://png.pngtree.com/background/20220714/original/pngtree-cute-cat-footprint-pattern-background-picture-image_1605674.jpg);
+    background-size: cover;
+}
+/* Estilos textos */
+p {
+    font-weight: bolder;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-weight: bolder;
+    border: 2px solid #1fdeed;
+    border-radius: 10px;
+    background-color: #1fdeed;
+    width: 250px;
+}
+
+/* Estilos cards */
+#padre {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.ficha {
+    width: 25%;
+    min-height: 50px;
+    padding: 5px;
+    margin: 5px; 
+    background-color: #c0fff4;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.ficha:hover {
+    background-color: #48c1cb;
+}
+
+img {
+    width: 150px;
+    height: 170px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    #padre {
+        display: flex;
+        justify-content: center;
+    }
+
+    .ficha {
+        flex: 1;
+        width: 45%; 
+        max-width: 50%;
+        padding: 5px;
+        margin: 10px; 
+        text-align: center;
+        border: 2px solid black;
+        border-radius: 10px;
+    }
+
+    img {
+        width: 110px;
+        height: 130px;
+    }
+}
